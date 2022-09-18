@@ -17,7 +17,6 @@ def utvonalselect():
     utvonaltext = tk.Label(ablak, text=utvonalURL ,fg="blue")
     utvonaltext.place(x=10, y=100)
 def letoltes():
-    letoltve = tk.Label(ablak, text="                          ")
     letoltve.place(x = 190, y=190)
     yt = YouTube(str(url.get("1.0", tk.END)))
     video = yt.streams.filter(only_audio=True).first()
